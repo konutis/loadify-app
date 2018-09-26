@@ -132,13 +132,9 @@ export default class RouteCalculator extends Component {
     }
 
     render () {
-        const vehicleItems = this.state.vehicles.map((vehicle) =>
-            <div key={vehicle.id}>{vehicle.id}</div>
-        );
-
         return (
             <div className='container'>
-                <div className='calculate-button-container'>
+                <div className='button-container'>
                     <button type='button' className='button--basic' onClick={this.handleCalculations}>
                         Calculate routes
                     </button>
