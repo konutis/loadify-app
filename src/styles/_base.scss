@@ -1,0 +1,45 @@
+body {
+  background-color: #424242;
+  font-family: $font-family;
+  color: #E0E0E0;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
+}
+
+.container-item {
+  margin-bottom: 50px;
+}
+
+.logo {
+  padding-top: 20px;
+}
+
+.title {
+  color: $smoke;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px black;
+}
+
+.calculate-button-container {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.solution-point-name {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 12px;
+}

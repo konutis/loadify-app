@@ -1,0 +1,147 @@
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
+input::-moz-placeholder, textarea::-moz-placeholder,
+input::placeholder, textarea::placeholder,
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: $form-placeholder-color;
+  font-size: $form-input-font-size;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder,
+input:focus::placeholder, textarea::focus:placeholder,
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder{
+  color: $form-hover-placeholder-color;
+}
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder,
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder,
+input:hover::placeholder, textarea:hover::placeholder,
+input:hover::-ms-placeholder, textarea:hover::-ms-placeholder {
+  color: $form-hover-placeholder-color;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder,
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder,
+input:hover:focus::placeholder, textarea:hover:focus::placeholder,
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: $form-hover-placeholder-color;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  text-align: center;
+  font-size: $form-heading-font-size;
+}
+
+.form-input,
+.form-submit {
+  font-family: 'Lato', sans-serif;
+  font-size: $form-input-font-size;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  color: $form-color;
+  background: transparent;
+  outline: none;
+  border: solid 1px $form-border-color;
+  border-bottom: none;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-submit:hover,
+.form-submit:focus {
+  background: $form-hover-background-color;
+  color: $form-hover-color;
+}
+
+.form-textarea {
+  width: 470px;
+  max-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  color: $form-color;
+  font-size: $form-input-font-size;
+  background: transparent;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  border: solid 1px $form-border-color;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+  background: $form-hover-background-color;
+  color: $form-hover-color;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: $form-submit-font-size;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px $form-border-color;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  color: $form-hover-color;
+}
+
+
+.form-field {
+  .form-input-1-3 {
+    width: 33.334%;
+    border-right: 0;
+
+    &:last-child {
+      border-right: solid 1px $form-border-color;
+    }
+  }
+
+  .form-input-1-2 {
+    width: 50%;
+    border-right: 0;
+
+    &:last-child {
+      border-right: solid 1px $form-border-color;
+    }
+  }
+}
+
+.button--basic {
+  background: transparent;
+  border: solid 1px $form-border-color;
+  cursor: pointer;
+  padding: 15px 25px;
+  transition: .2s all;
+  outline: none;
+  color: $form-color;
+  font-size: $form-submit-font-size;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $form-hover-background-color;
+    color: $form-hover-color;
+  }
+}
