@@ -78,7 +78,13 @@ const config = {
             favicon: commonPaths.favicon,
             inject: true
         })
-    ]
+    ],
+    node: {
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty',
+        dns: 'empty'
+    }
 };
 
 module.exports = config;
